@@ -43,7 +43,7 @@ public class Mailer {
         mail.setFrom(new InternetAddress(senderAddress));
         mail.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientAddress));
         mail.setSubject(SUBJECT);
-        mail.setText(content);
+        mail.setContent(content, "text/html; charset=utf-8");
 
         Transport.send(mail);
     }
