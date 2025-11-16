@@ -11,7 +11,7 @@ public class Wichtler {
     private final Mailer mailer;
     private final String message_content;
     private boolean isDebug = false;
-    private static final String FILE_NAME = "content.html";
+    private static final String FILE_NAME = "email-template.html";
 
     public Wichtler(String senderAddress, String password, List<User> users) {
         this.users = users;
